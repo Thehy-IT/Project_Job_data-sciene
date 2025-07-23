@@ -42,3 +42,5 @@ Dự án xây dựng website trực quan hóa dữ liệu về thị trường v
 - Tác giả: Thehy-IT
 - Dự án phục vụ mục đích học tập, nghiên cứu và tham khảo thị trường lao động Data Science tại Việt Nam.
 - Mọi nội dung, dữ liệu đều được tổng hợp từ nguồn công khai, phi thương mại.
+
+**lưu ý: Project chỉ là dự án với mẫu Data mẫu và thiết kế với AI- Project chỉ phù hợp cho việc tham khảo và trải nghiệm không phù hợp cho nghiên cứu sâu và báo chuyên nghiệp nhé**
