@@ -1,0 +1,6 @@
+Vị trí,Mô tả công việc,Kỹ năng chính,Mức lương TB (Triệu VNĐ),Yêu cầu KN (năm),Cơ hội thăng tiến
+Data Scientist,"Phân tích dữ liệu, xây dựng mô hình ML, đưa ra insights kinh doanh","Python, R, SQL, Statistics, ML, Storytelling",30,2,Cao
+Data Engineer,"Xây dựng pipeline dữ liệu, ETL, quản lý hạ tầng dữ liệu","Python, SQL, Spark, Kafka, Docker, Cloud",25,1,Cao
+Data Analyst,"Phân tích dữ liệu, tạo báo cáo, dashboard, KPIs","SQL, Excel, Power BI, Tableau, Python cơ bản",15,0,Trung bình
+ML Engineer,Thiết kế và triển khai mô hình machine learning,"Python, TensorFlow, PyTorch, MLOps, Statistics",35,3,Cao
+AI Engineer,"Phát triển ứng dụng AI, deep learning, computer vision","Python, Deep Learning, Computer Vision, NLP",25,2,Cao

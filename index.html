@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phân Tích Xu Hướng Việc Làm Data Science Việt Nam</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-chart-line"></i>
+                <span>Data Science VN</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Trang chủ</a></li>
+                <li><a href="#overview" class="nav-link">Tổng quan</a></li>
+                <li><a href="#salary" class="nav-link">Mức lương</a></li>
+                <li><a href="#skills" class="nav-link">Kỹ năng</a></li>
+                <li><a href="#trends" class="nav-link">Xu hướng</a></li>
+                <li><a href="#comparison" class="nav-link">So sánh vị trí</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">DỰ ÁN PHÂN TÍCH XU HƯỚNG VIỆC LÀM DATA SCIENCE TẠI VIỆT NAM</h1>
+                <p class="hero-description">
+                    Khám phá toàn cảnh ngành Data Science tại Việt Nam qua phân tích chi tiết về mức lương, 
+                    kỹ năng cần thiết, xu hướng phát triển và so sánh các vị trí công việc trong lĩnh vực này.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">200-400k</div>
+                        <div class="stat-label">Thiếu hụt nhân lực IT</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5-6%</div>
+                        <div class="stat-label">Tốc độ tăng trưởng hàng năm</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3M</div>
+                        <div class="stat-label">Dự báo lao động đến 2030</div>
+                    </div>
+                </div>
+                <a href="#overview" class="btn btn--primary btn--lg">Khám phá ngay</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="section">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-eye section-icon"></i>
+                <h2 class="section-title">Tổng Quan Ngành IT Việt Nam</h2>
+                <p class="section-description">Thống kê và phân tích tổng quan về tình hình ngành công nghệ thông tin tại Việt Nam</p>
+            </div>
+            <div class="overview-grid">
+                <div class="card overview-card">
+                    <div class="card__body">
+                        <div class="overview-stat">
+                            <i class="fas fa-users overview-icon shortage"></i>
+                            <div class="overview-content">
+                                <h3>Thiếu Hụt Nhân Lực</h3>
+                                <div class="overview-number">200-400 nghìn người</div>
+                                <p>Ngành IT Việt Nam đang thiếu hụt nghiêm trọng nhân lực chất lượng cao, 
+                                tạo cơ hội lớn cho các chuyên gia Data Science.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card overview-card">
+                    <div class="card__body">
+                        <div class="overview-stat">
+                            <i class="fas fa-chart-line overview-icon growth"></i>
+                            <div class="overview-content">
+                                <h3>Tốc Độ Tăng Trưởng</h3>
+                                <div class="overview-number">5-6% hàng năm</div>
+                                <p>Ngành IT duy trì tốc độ tăng trưởng ổn định, 
+                                đặc biệt mạnh trong lĩnh vực dữ liệu và trí tuệ nhân tạo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card overview-card">
+                    <div class="card__body">
+                        <div class="overview-stat">
+                            <i class="fas fa-target overview-icon future"></i>
+                            <div class="overview-content">
+                                <h3>Triển Vọng 2030</h3>
+                                <div class="overview-number">3 triệu lao động</div>
+                                <p>Dự kiến đến năm 2030, ngành IT Việt Nam sẽ có khoảng 3 triệu lao động, 
+                                tăng gấp đôi so với hiện tại.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Salary Section -->
+    <section id="salary" class="section section-alternate">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-dollar-sign section-icon"></i>
+                <h2 class="section-title">Mức Lương Data Science</h2>
+                <p class="section-description">Phân tích chi tiết mức lương các vị trí Data Science tại Việt Nam năm 2024</p>
+            </div>
+            
+            <div class="salary-controls">
+                <div class="form-group">
+                    <label for="positionFilter" class="form-label">Lọc theo vị trí:</label>
+                    <select id="positionFilter" class="form-control">
+                        <option value="all">Tất cả vị trí</option>
+                        <option value="Data Scientist">Data Scientist</option>
+                        <option value="Data Engineer">Data Engineer</option>
+                        <option value="Data Analyst">Data Analyst</option>
+                        <option value="ML Engineer">ML Engineer</option>
+                        <option value="AI Engineer">AI Engineer</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="salary-chart-container">
+                <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/7aa87d3c60005837ef45d4dd29a788f3/c1dd6500-d3ac-4f7c-b64d-825bee5875fd/59fe1546.png" 
+                     alt="Biểu đồ mức lương Data Science" class="chart-image">
+            </div>
+
+            <div class="salary-table-container">
+                <table class="salary-table" id="salaryTable">
+                    <thead>
+                        <tr>
+                            <th>Vị trí</th>
+                            <th>Lương khởi điểm (triệu VNĐ)</th>
+                            <th>Lương trung bình (triệu VNĐ)</th>
+                            <th>Lương cao (triệu VNĐ)</th>
+                            <th>Kinh nghiệm tối thiểu (năm)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="salaryTableBody">
+                        <!-- Data will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-code section-icon"></i>
+                <h2 class="section-title">Kỹ Năng Cần Thiết</h2>
+                <p class="section-description">Top 10 kỹ năng được yêu cầu nhiều nhất trong các công việc Data Science</p>
+            </div>
+
+            <div class="skills-chart-container">
+                <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/7aa87d3c60005837ef45d4dd29a788f3/21250117-dcf1-435c-9fdd-a0e6cf3e826b/d47e285b.png" 
+                     alt="Top 10 kỹ năng Data Science" class="chart-image">
+            </div>
+
+            <div class="skills-category-grid">
+                <div class="card skills-category-card">
+                    <div class="card__body">
+                        <h4><i class="fas fa-code"></i> Programming</h4>
+                        <div class="skills-list">
+                            <span class="skill-tag">Python (85%)</span>
+                            <span class="skill-tag">Git/GitHub (55%)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card skills-category-card">
+                    <div class="card__body">
+                        <h4><i class="fas fa-database"></i> Database</h4>
+                        <div class="skills-list">
+                            <span class="skill-tag">SQL (80%)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card skills-category-card">
+                    <div class="card__body">
+                        <h4><i class="fas fa-brain"></i> AI/ML</h4>
+                        <div class="skills-list">
+                            <span class="skill-tag">Machine Learning (75%)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card skills-category-card">
+                    <div class="card__body">
+                        <h4><i class="fas fa-chart-bar"></i> Visualization</h4>
+                        <div class="skills-list">
+                            <span class="skill-tag">Data Visualization (70%)</span>
+                            <span class="skill-tag">Power BI (60%)</span>
+                            <span class="skill-tag">Tableau (55%)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card skills-category-card">
+                    <div class="card__body">
+                        <h4><i class="fas fa-tools"></i> Tools</h4>
+                        <div class="skills-list">
+                            <span class="skill-tag">Excel (70%)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card skills-category-card">
+                    <div class="card__body">
+                        <h4><i class="fas fa-cloud"></i> Cloud</h4>
+                        <div class="skills-list">
+                            <span class="skill-tag">AWS/Azure/GCP (50%)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trends Section -->
+    <section id="trends" class="section section-alternate">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-trending-up section-icon"></i>
+                <h2 class="section-title">Xu Hướng Phát Triển</h2>
+                <p class="section-description">Phân tích xu hướng tăng trưởng ngành IT Việt Nam từ 2020-2025</p>
+            </div>
+
+            <div class="trends-chart-container">
+                <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/7aa87d3c60005837ef45d4dd29a788f3/c8053ca9-8fb4-44b8-ba31-816c1b0df490/7d7aadcc.png" 
+                     alt="Xu hướng tăng trưởng IT Việt Nam" class="chart-image">
+            </div>
+
+            <div class="trends-insights">
+                <div class="card">
+                    <div class="card__body">
+                        <h4><i class="fas fa-robot"></i> Trí Tuệ Nhân Tạo (AI)</h4>
+                        <p>AI đang được ứng dụng rộng rãi trong các lĩnh vực như finance, healthcare, retail. 
+                        Nhu cầu về AI Engineer và ML Engineer tăng mạnh.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__body">
+                        <h4><i class="fas fa-cloud"></i> Cloud Computing</h4>
+                        <p>Các doanh nghiệp Việt Nam đang chuyển đổi số mạnh mẽ, tăng nhu cầu về 
+                        chuyên gia cloud và data engineer có kinh nghiệm AWS, Azure, GCP.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__body">
+                        <h4><i class="fas fa-chart-line"></i> Big Data</h4>
+                        <p>Với sự bùng nổ của dữ liệu, các công ty cần chuyên gia phân tích big data 
+                        để đưa ra quyết định kinh doanh thông minh.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section id="comparison" class="section">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-balance-scale section-icon"></i>
+                <h2 class="section-title">So Sánh Vị Trí</h2>
+                <p class="section-description">Phân tích chi tiết và so sánh 5 vị trí chính trong lĩnh vực Data Science</p>
+            </div>
+
+            <div class="comparison-table-container">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Vị trí</th>
+                            <th>Mô tả công việc</th>
+                            <th>Kỹ năng chính</th>
+                            <th>Lương TB (triệu VNĐ)</th>
+                            <th>Kinh nghiệm</th>
+                            <th>Cơ hội thăng tiến</th>
+                        </tr>
+                    </thead>
+                    <tbody id="comparisonTableBody">
+                        <!-- Data will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Data Science VN</h4>
+                    <p>Dự án phân tích xu hướng việc làm Data Science tại Việt Nam</p>
+                </div>
+                <div class="footer-section">
+                    <h5>Liên kết</h5>
+                    <ul>
+                        <li><a href="#home">Trang chủ</a></li>
+                        <li><a href="#overview">Tổng quan</a></li>
+                        <li><a href="#salary">Mức lương</a></li>
+                        <li><a href="#skills">Kỹ năng</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>Thông tin</h5>
+                    <ul>
+                        <li><a href="#trends">Xu hướng</a></li>
+                        <li><a href="#comparison">So sánh vị trí</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Data Science VN Analysis Project. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
